@@ -38,6 +38,13 @@ function fibonacci(p){
     let total2=0
     let total3=1
     let sumOfPrevTwo
+
+    if (p === 1){
+        return total2
+    }else if(p === 2){
+        return total3
+    }
+
     for(let i=3; i<=p;i++){
         
         sumOfPrevTwo=add(total2,total3)
@@ -49,5 +56,5 @@ function fibonacci(p){
     // console.log(total)
     return sumOfPrevTwo
 }
-console.log(fibonacci(3))
-//doesn't work lower than 3
+console.log(fibonacci(1))//It works now!
+
